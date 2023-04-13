@@ -18,7 +18,11 @@ const TodoTemplateBlock = styled.div`
 `;
 
 function TodoTemplate({ children }) {
-  return <TodoTemplateBlock>{children}</TodoTemplateBlock>;
+  return (
+    <div>
+      <TodoTemplateBlock>{children}</TodoTemplateBlock>;
+    </div>
+  )
 }
 
 export default TodoTemplate;
